@@ -1,0 +1,138 @@
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #e8e8e8;
+    min-height: 100vh;
+    display: flex;           
+    flex-direction: column; 
+    overflow-x: hidden;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("https://i.pinimg.com/originals/e3/ae/74/e3ae743caffb2c11534ac7d06eb7f5af.png") no-repeat center center/cover;
+    filter: blur(6px) brightness(0.6);
+    z-index: -2;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: -1;
+}
+
+main {
+    flex: 1;
+}
+
+header {
+    background: rgba(17, 17, 17, 0.9);
+    padding: 25px;
+    text-align: center;
+    border-bottom: 2px solid #e0b94d;
+}
+
+header h1 {
+    color: #e0b94d;
+    margin: 0;
+    font-size: 2rem;
+    text-shadow: 2px 2px 6px black;
+}
+
+#main-header {
+    padding: 25px;
+    text-align: center;
+}
+
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: #f0f0f0;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #e0b94d;
+}
+
+.card {
+    background: rgba(20, 20, 20, 0.9);
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 900px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+    overflow: auto;
+}
+
+h2 {
+    color: #e0b94d;
+    margin-bottom: 10px;
+}
+
+.poster {
+    display: block;
+    margin: 15px auto;
+    width: 300px;
+    border: 2px solid #e0b94d;
+    border-radius: 8px;
+}
+
+.wide-img {
+    display: block;
+    margin: 20px auto;
+    max-width: 90%;
+    border-radius: 8px;
+    border: 1px solid #444;
+}
+
+.img-left {
+    float: left;
+    margin: 10px 15px 10px 0;
+    width: 220px;
+    border-radius: 8px;
+}
+
+.img-right {
+    float: right;
+    margin: 10px 0 10px 15px;
+    width: 220px;
+    border-radius: 8px;
+}
+
+.img-center {
+    display: block;
+    margin: 20px auto;
+    width: 250px;
+}
+
+.clear {
+    clear: both;
+}
+
+footer {
+    background: rgba(17, 17, 17, 0.9);
+    text-align: center;
+    padding: 15px;
+    color: #999;
+    border-top: 2px solid #e0b94d;
+    z-index: 1;
+}
